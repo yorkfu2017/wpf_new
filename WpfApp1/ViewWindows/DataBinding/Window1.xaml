@@ -1,0 +1,42 @@
+﻿<Window x:Class="WpfApp1.ViewWindows.DataBinding.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.ViewWindows.DataBinding"
+        xmlns:sys="clr-namespace:System;assembly=mscorlib"
+        mc:Ignorable="d"
+        Title="Window1" Height="900" Width="800">
+    <StackPanel>
+        <!--在xml语法中实现数据绑定  滚动条-->
+        <!--<TextBox x:Name="textBox1" Text="{Binding Path=Value, ElementName=slider1 }" BorderBrush=" Black" Margin="5"></TextBox>-->
+        <TextBox x:Name="textBox1" Text="Defaults" BorderBrush=" Black" Margin="5"></TextBox>
+        <Slider x:Name="slider1" Maximum="100" Minimum="0" Margin="5"></Slider>
+        <!--实现数据绑定 文本长度 -->
+        <TextBox x:Name="TextBox1" BorderBrush="Black" Margin="5" Background="AliceBlue" Width="200"></TextBox>
+        <TextBox x:Name="textBox2"  Width="200" Text="{Binding Path=Text.Length, ElementName=TextBox1, Mode=OneWay}"></TextBox>
+        <StackPanel Height="250" Width="400" Margin="-330,40,0,0"  Background="AliceBlue">
+            <TextBox x:Name="TextBox3" BorderBrush="Black" Margin="5" Background="AliceBlue" Width="200" Text="Templete"></TextBox>
+            <!--可以用如下代码实现，也可以后台实现-->
+            <!--<TextBox x:Name="textBox4"  Width="200" Text="{Binding Path=Text.[3], ElementName=TextBox3, Mode=OneWay}" Margin="5"></TextBox>-->
+            <TextBox x:Name="textBox4"  Width="200" Text="Default" Margin="5"></TextBox>
+            <TextBox x:Name="textBox5"  Width="200" Text="Default" Margin="5"></TextBox>
+            <TextBox x:Name="textBox6"  Width="200" Text="Default" Margin="5"></TextBox>
+            <TextBox x:Name="textBox7"  Width="200" Text="Default" Margin="5"></TextBox>
+        </StackPanel>
+        <StackPanel Width="500" Height="200" Margin="146,0" Background="BlanchedAlmond">
+            <StackPanel.Resources>
+                <sys:String x:Key ="MyString">绿蚁新焙酒，红泥小火炉</sys:String>
+            </StackPanel.Resources>
+            <!--<TextBlock x:Name="textBlock1" TextWrapping=" Wrap"
+                       Text="{Binding Path= ., Source={StaticResource ResourceKey=MyString}}" FontSize="16" Margin="16"/>-->
+            <!--<TextBlock x:Name="textBlock1" TextWrapping=" Wrap"
+                       Text="{Binding ., Source={StaticResource ResourceKey=MyString}}" FontSize="16" Margin="16"/>-->
+            <!--<TextBlock x:Name="textBlock1" TextWrapping=" Wrap"
+                       Text="{Binding  Source={StaticResource ResourceKey=MyString}}" FontSize="16" Margin="16"/>-->
+            <TextBlock x:Name="textBlock1" TextWrapping=" Wrap" Text="textBlock1"
+                       FontSize="16" Margin="16"/>
+        </StackPanel>
+    </StackPanel>
+   
+</Window>
