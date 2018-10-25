@@ -26,7 +26,7 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            WpfApp1.ViewWindows.DataBinding.ListItemSource main = new WpfApp1.ViewWindows.DataBinding.ListItemSource();
+            WpfApp1.ViewWindows.DataBinding.XMLAsResource main = new WpfApp1.ViewWindows.DataBinding.XMLAsResource();
             App.Current.MainWindow = main;
             //this.Close();
             main.Show();

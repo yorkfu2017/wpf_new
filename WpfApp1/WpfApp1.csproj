@@ -65,11 +65,17 @@
     <Compile Include="ViewWindows\DataBinding\DataContextAsResource.xaml.cs">
       <DependentUpon>DataContextAsResource.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewWindows\DataBinding\DataTableAsSource.xaml.cs">
+      <DependentUpon>DataTableAsSource.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewWindows\DataBinding\ListItemSource.xaml.cs">
       <DependentUpon>ListItemSource.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewWindows\DataBinding\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\DataBinding\XMLAsResource.xaml.cs">
+      <DependentUpon>XMLAsResource.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewWindows\WrapPanel.xaml.cs">
       <DependentUpon>WrapPanel.xaml</DependentUpon>
@@ -85,11 +91,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ViewWindows\DataBinding\DataTableAsSource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ViewWindows\DataBinding\ListItemSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewWindows\DataBinding\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\DataBinding\XMLAsResource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -140,6 +154,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ViewWindows\DataBinding\XMLFile1.xml" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
