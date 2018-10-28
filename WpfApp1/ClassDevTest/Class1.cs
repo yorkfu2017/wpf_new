@@ -16,17 +16,21 @@ namespace WpfApp1.ClassDevTest
     rawResponse = ReadLine();
     Lock.Exit();
     */
+
+        //这边放一个静态资源，当多个方法同时要操作这个资源的的时候，我们就需要使用同步了，原子操作，符合操作这些概念，java 里面讲的应该更清楚
     public class ResourceLockTest
     {
         public static int ResourceLockString = 0;
     }
     public class MethodsLockTest
     {
+        private object objectForLock = new object();
 
         public void MyMethod1()
         {
             Console.WriteLine(Thread.CurrentThread.Name + "---not locked in MyMethod1()");
-            lock (this)
+            //这边呢，我们一般锁定会创建一个私有成员对象， 从而达到锁定 一个被实例化了的对象。lock (this) 就表示锁定当前类 我们还有锁定代码块等等
+            lock (objectForLock)
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -39,7 +43,7 @@ namespace WpfApp1.ClassDevTest
         public void MyMethod2()
         {
             Console.WriteLine(Thread.CurrentThread.Name + "---not locked in MyMethod2()");
-            lock (this)
+            lock (objectForLock)
             {
                 for (int i = 0; i < 10; i++)
                 {
@@ -52,7 +56,7 @@ namespace WpfApp1.ClassDevTest
         public void MyMethod3()
         {
             Console.WriteLine(Thread.CurrentThread.Name + "---not locked in MyMethod3()");
-            lock (this)
+            lock (objectForLock)
             {
                 for (int i = 0; i < 10; i++)
                 {
