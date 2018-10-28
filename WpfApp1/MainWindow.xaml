@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="1200" Background="AliceBlue">
     <Grid>
-        <Button Background="Beige" Height="45" Width="200" Margin="38,67,954,307" Content="DataBinding" FontSize="18" Click="Button_Click"  ></Button>
+        <Button Background="Beige" Height="45" Width="200" Margin="38,67,954,307"
+                Content="DataBinding" FontSize="18" Click="Button_Click"  ></Button>
+        <Button Background="Beige" Height="45" Width="200"  
+                Content="DependentyProperty" FontSize="18" Click="Button1_Click" Margin="332,68,661.6,308"  ></Button>
     </Grid>
 </Window>

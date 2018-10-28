@@ -58,6 +58,7 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="ClassDevTest\Class1.cs" />
     <Compile Include="MainWindow.xaml.cs">
       <DependentUpon>MainWindow.xaml</DependentUpon>
     </Compile>
@@ -76,6 +77,12 @@
     </Compile>
     <Compile Include="ViewWindows\DataBinding\XMLAsResource.xaml.cs">
       <DependentUpon>XMLAsResource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\DependencyPropertyOfWpf\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\DependencyPropertyOfWpf\Window2.xaml.cs">
+      <DependentUpon>Window2.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewWindows\WrapPanel.xaml.cs">
       <DependentUpon>WrapPanel.xaml</DependentUpon>
@@ -104,6 +111,14 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="ViewWindows\DataBinding\XMLAsResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\DependencyPropertyOfWpf\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\DependencyPropertyOfWpf\Window2.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

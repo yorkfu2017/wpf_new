@@ -26,7 +26,15 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            WpfApp1.ViewWindows.DataBinding.XMLAsResource main = new WpfApp1.ViewWindows.DataBinding.XMLAsResource();
+            WpfApp1.ViewWindows.DataBinding.Window1 main = new WpfApp1.ViewWindows.DataBinding.Window1();
+            App.Current.MainWindow = main;
+            //this.Close();
+            main.Show();
+        }
+
+        private void Button1_Click(object sender, RoutedEventArgs e)
+        {
+            WpfApp1.ViewWindows.DependencyPropertyOfWpf.Window2 main = new WpfApp1.ViewWindows.DependencyPropertyOfWpf.Window2();
             App.Current.MainWindow = main;
             //this.Close();
             main.Show();
