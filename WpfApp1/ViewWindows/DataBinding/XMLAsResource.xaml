@@ -6,7 +6,7 @@
         xmlns:local="clr-namespace:WpfApp1.ViewWindows.DataBinding"
         mc:Ignorable="d"
         Title="XMLAsResource" Height="450" Width="800">
-    <StackPanel Background="LightBlue">
+    <!--<StackPanel Background="LightBlue">
         <ListView x:Name="listViewStudents" Height="130" Margin="5">
             <ListView.View>
                 <GridView>
@@ -16,5 +16,40 @@
             </ListView.View>
         </ListView>
         <Button Content="Load" Click="Button_Click1" Height="25" Margin="5,0"></Button>
-    </StackPanel>
+    </StackPanel>-->
+    <Window.Resources>
+        <XmlDataProvider x:Key="xdp" XPath="FileSystem/Folder">
+            <x:XData>
+                <FileSystem xmlns="">
+                    <Folder Name="Books">
+                        <Folder Name ="Programing">
+                            <Folder Name ="Window">
+                                <Folder Name ="WPF"></Folder>
+                                <Folder Name ="MFC"></Folder>
+                                <Folder Name ="WPF"></Folder>
+                            </Folder>
+                        </Folder>
+                        <Folder Name ="Tools">
+                            <Folder Name ="Development">
+                                <Folder Name ="Dedignment"></Folder>
+                                <Folder Name ="Palyers"></Folder>
+                                <Folder Name ="ssss"></Folder>
+                            </Folder>
+                        </Folder>
+                    </Folder>
+                </FileSystem>
+            </x:XData>
+        </XmlDataProvider>
+    </Window.Resources>
+    <Grid>
+        <StackPanel Width="300" Margin="0,0,492,0" Background="Azure">
+            <TreeView ItemsSource="{Binding Source={StaticResource xdp}}">
+                <TreeView.ItemTemplate>
+                    <HierarchicalDataTemplate ItemsSource="{Binding XPath=Folder}">
+                        <TextBlock Text="{Binding XPath=@Name}"></TextBlock>
+                    </HierarchicalDataTemplate>
+                </TreeView.ItemTemplate>
+            </TreeView>
+        </StackPanel>
+    </Grid>
 </Window>

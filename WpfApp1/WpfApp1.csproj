@@ -68,8 +68,17 @@
     <Compile Include="ViewWindows\DataBinding\DataTableAsSource.xaml.cs">
       <DependentUpon>DataTableAsSource.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewWindows\DataBinding\LinqAsResource.xaml.cs">
+      <DependentUpon>LinqAsResource.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewWindows\DataBinding\ListItemSource.xaml.cs">
       <DependentUpon>ListItemSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\DataBinding\MulityBinding .xaml.cs">
+      <DependentUpon>MulityBinding .xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\DataBinding\ValidateOfBinding.xaml.cs">
+      <DependentUpon>ValidateOfBinding.xaml</DependentUpon>
     </Compile>
     <Compile Include="ViewWindows\DataBinding\Window1.xaml.cs">
       <DependentUpon>Window1.xaml</DependentUpon>
@@ -95,7 +104,19 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ViewWindows\DataBinding\LinqAsResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="ViewWindows\DataBinding\ListItemSource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\DataBinding\MulityBinding .xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\DataBinding\ValidateOfBinding.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

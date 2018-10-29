@@ -26,7 +26,7 @@ namespace WpfApp1
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            WpfApp1.ViewWindows.DataBinding.XMLAsResource main = new WpfApp1.ViewWindows.DataBinding.XMLAsResource();
+            WpfApp1.ViewWindows.DataBinding.DataTableAsSource main = new WpfApp1.ViewWindows.DataBinding.DataTableAsSource();
             App.Current.MainWindow = main;
             //this.Close();
             main.Show();

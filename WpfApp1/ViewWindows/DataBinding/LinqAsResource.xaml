@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp1.ViewWindows.DataBinding.LinqAsResource"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.ViewWindows.DataBinding"
+        mc:Ignorable="d"
+        Title="LinqAsResource" Height="450" Width="800">
+    <StackPanel Background="LightBlue" >
+        <ListView x:Name="listViewStudents" Height="143" Margin="5">
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id" Width="60" DisplayMemberBinding="{Binding Id}"></GridViewColumn>
+                    <GridViewColumn Header="Name" Width="60" DisplayMemberBinding="{Binding Name}"></GridViewColumn>
+                    <GridViewColumn Header="Age" Width="60" DisplayMemberBinding="{Binding Age}"></GridViewColumn>
+                </GridView>
+            </ListView.View>
+        </ListView>
+        <Button Content="Load" Height="25" Margin="5,0" Click="Button_Click"></Button>
+    </StackPanel>
+</Window>

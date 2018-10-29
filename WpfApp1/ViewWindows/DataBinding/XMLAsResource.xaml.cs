@@ -31,12 +31,12 @@ namespace WpfApp1.ViewWindows.DataBinding
             //doc.Load(@"D:\VS_CODE\git_2\WpfApp1\ViewWindows\DataBinding\XMLFile1.xml");
             //XmlDataProvider xdp = new XmlDataProvider();
             //xdp.Document = doc;
-
-            XmlDataProvider xdp = new XmlDataProvider();
-            xdp.Source = new Uri(@"D:\VS_CODE\git_2\WpfApp1\ViewWindows\DataBinding\XMLFile1.xml");
-            xdp.XPath = @"StudentList/Student";
-            this.listViewStudents.DataContext = xdp;
-            this.listViewStudents.SetBinding(ListView.ItemsSourceProperty,new Binding());
+            //另外一种方法
+            //XmlDataProvider xdp = new XmlDataProvider();
+            //xdp.Source = new Uri(@"D:\VS_CODE\git_2\WpfApp1\ViewWindows\DataBinding\XMLFile1.xml");
+            //xdp.XPath = @"StudentList/Student";
+            //this.listViewStudents.DataContext = xdp;
+            //this.listViewStudents.SetBinding(ListView.ItemsSourceProperty,new Binding());
         }
     }
 }
