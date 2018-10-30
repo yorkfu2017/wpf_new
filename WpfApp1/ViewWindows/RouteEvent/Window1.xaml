@@ -1,0 +1,31 @@
+﻿<Window x:Class="WpfApp1.ViewWindows.RouteEvent.Window1"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.ViewWindows.RouteEvent"
+        mc:Ignorable="d"
+        Title="Window1" Height="450" Width="800">
+    <!--<Grid x:Name="girdRoot" Background="Lime">-->
+    <!--我们在界面也可以订阅时间，如果后台也有订阅代码，就会执行两次-->
+    <!--<Grid x:Name="girdRoot" Background="Lime" Button.Click="ButtonClicked">-->
+    <!--这里我们使用buttonbase-->
+    <Grid x:Name="girdRoot" Background="Lime" ButtonBase.Click="ButtonClicked">
+        <Grid x:Name="girdA" Margin="10" Background="Blue">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+                <ColumnDefinition></ColumnDefinition>
+            </Grid.ColumnDefinitions>
+            <Canvas x:Name="canvasLeft" Grid.Column="0" Background="Red" Margin="10">
+                <Button x:Name="buttonLeft" Content="Left" Width="40" Height="100" Margin="10">
+                </Button>
+            </Canvas>
+            <Canvas x:Name="canvasRight" Grid.Column="1" Background="Yellow" Margin="10">
+                <Button x:Name="buttonRight" Content="Right" Width="40" Height="100" Margin="10">
+                </Button>
+            </Canvas>
+        </Grid>
+        
+    </Grid>
+</Window>

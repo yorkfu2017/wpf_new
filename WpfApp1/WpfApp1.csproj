@@ -15,6 +15,21 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
     <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -40,6 +55,7 @@
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Data" />
+    <Reference Include="System.Drawing" />
     <Reference Include="System.Xml" />
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Core" />
@@ -93,6 +109,53 @@
     <Compile Include="ViewWindows\DependencyPropertyOfWpf\Window2.xaml.cs">
       <DependentUpon>Window2.xaml</DependentUpon>
     </Compile>
+    <Compile Include="ViewWindows\IntorductionOfResources\BinaryAndWpfResource.xaml.cs">
+      <DependentUpon>BinaryAndWpfResource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\IntorductionOfResources\PackUrlResource.xaml.cs">
+      <DependentUpon>PackUrlResource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\IntorductionOfResources\RelativeResource.xaml.cs">
+      <DependentUpon>RelativeResource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\IntorductionOfResources\Resource1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resource1.resx</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\IntorductionOfResources\StaticAndDynamicResource.xaml.cs">
+      <DependentUpon>StaticAndDynamicResource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\IntorductionOfResources\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\IntroductionOfCommand\CustomerCommandMain.xaml.cs">
+      <DependentUpon>CustomerCommandMain.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\IntroductionOfCommand\CustomerCommandTarget.xaml.cs">
+      <DependentUpon>CustomerCommandTarget.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\IntroductionOfCommand\IntorductionOfComandParameter.xaml.cs">
+      <DependentUpon>IntorductionOfComandParameter.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\IntroductionOfCommand\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\RouteEvent\CustomerRouteEvent.xaml.cs">
+      <DependentUpon>CustomerRouteEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\RouteEvent\IntroductAttachedEvent.xaml.cs">
+      <DependentUpon>IntroductAttachedEvent.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\RouteEvent\IntroductOfRoutedEventArgs.xaml.cs">
+      <DependentUpon>IntroductOfRoutedEventArgs.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\RouteEvent\UserControl1.xaml.cs">
+      <DependentUpon>UserControl1.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewWindows\RouteEvent\Window1.xaml.cs">
+      <DependentUpon>Window1.xaml</DependentUpon>
+    </Compile>
     <Compile Include="ViewWindows\WrapPanel.xaml.cs">
       <DependentUpon>WrapPanel.xaml</DependentUpon>
     </Compile>
@@ -143,6 +206,62 @@
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
+    <Page Include="ViewWindows\IntorductionOfResources\BinaryAndWpfResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\IntorductionOfResources\PackUrlResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\IntorductionOfResources\RelativeResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\IntorductionOfResources\StaticAndDynamicResource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\IntorductionOfResources\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\IntroductionOfCommand\CustomerCommandMain.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\IntroductionOfCommand\CustomerCommandTarget.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\IntroductionOfCommand\IntorductionOfComandParameter.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\IntroductionOfCommand\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\RouteEvent\CustomerRouteEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\RouteEvent\IntroductAttachedEvent.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\RouteEvent\IntroductOfRoutedEventArgs.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\RouteEvent\UserControl1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewWindows\RouteEvent\Window1.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="WindowMain.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
@@ -182,6 +301,10 @@
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
+    <EmbeddedResource Include="ViewWindows\IntorductionOfResources\Resource1.resx">
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resource1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -193,6 +316,25 @@
   </ItemGroup>
   <ItemGroup>
     <Resource Include="ViewWindows\DataBinding\XMLFile1.xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Image1.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ViewWindows\IntroductionOfCommand\TextFile1.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ViewWindows\IntorductionOfResources\test1.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="ViewWindows\IntorductionOfResources\test2.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

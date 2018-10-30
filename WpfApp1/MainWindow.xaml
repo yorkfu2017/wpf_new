@@ -11,5 +11,11 @@
                 Content="DataBinding" FontSize="18" Click="Button_Click"  ></Button>
         <Button Background="Beige" Height="45" Width="200"  
                 Content="DependentyProperty" FontSize="18" Click="Button1_Click" Margin="332,68,661.6,308"  ></Button>
+        <Button Background="Beige" Height="45" Width="200"  
+                Content="RouteEnent" FontSize="18" Click="Button2_Click" Margin="615,67,377,307"  ></Button>
+        <Button Background="Beige" Height="45" Width="200"  
+                Content="Command" FontSize="18" Click="Button3_Click" Margin="38,182,954,192"  ></Button>
+        <Button Background="Beige" Height="45" Width="200"  
+                Content="Resource" FontSize="18" Click="Button4_Click" Margin="332,182,660,192"  ></Button>
     </Grid>
 </Window>

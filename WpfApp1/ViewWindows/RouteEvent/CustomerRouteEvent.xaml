@@ -1,0 +1,25 @@
+﻿<Window x:Class="WpfApp1.ViewWindows.RouteEvent.CustomerRouteEvent"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:WpfApp1.ViewWindows.RouteEvent"
+        local:TimeButton.ReportTime="ReportTimeHandler"
+        mc:Ignorable="d"
+        Title="CustomerRouteEvent" Height="450" Width="800">
+    <!--当前场景设置 每一层都会接受事件-->
+        <Grid x:Name="grid_1" local:TimeButton.ReportTime="ReportTimeHandler">
+        <Grid x:Name="grid_2" local:TimeButton.ReportTime="ReportTimeHandler">
+            <Grid x:Name="grid_3" local:TimeButton.ReportTime="ReportTimeHandler">
+                <StackPanel x:Name="stackPanel_1" 
+                            local:TimeButton.ReportTime="ReportTimeHandler">
+                    <ListBox x:Name="listBox"></ListBox>
+                    <local:TimeButton x:Name="timeButton" Height="80"  Width="80"
+                                      Content="报时"
+                              local:TimeButton.ReportTime="ReportTimeHandler" Margin="356,0"/>
+                </StackPanel>
+
+            </Grid>
+        </Grid>
+    </Grid>
+</Window>

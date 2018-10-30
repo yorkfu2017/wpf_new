@@ -39,5 +39,27 @@ namespace WpfApp1
             //this.Close();
             main.Show();
         }
+        //WpfApp1.ViewWindows.RouteEvent
+        private void Button2_Click(object sender, RoutedEventArgs e)
+        {
+            WpfApp1.ViewWindows.RouteEvent.IntroductAttachedEvent main = new WpfApp1.ViewWindows.RouteEvent.IntroductAttachedEvent();
+            App.Current.MainWindow = main;
+            //this.Close();
+            main.Show();
+        }
+        private void Button3_Click(object sender, RoutedEventArgs e)
+        {
+            WpfApp1.ViewWindows.IntroductionOfCommand.CustomerCommandMain main = new WpfApp1.ViewWindows.IntroductionOfCommand.CustomerCommandMain();
+            App.Current.MainWindow = main;
+            //this.Close();
+            main.Show();
+        }
+        private void Button4_Click(object sender, RoutedEventArgs e)
+        {
+            WpfApp1.ViewWindows.IntorductionOfResources.PackUrlResource main = new WpfApp1.ViewWindows.IntorductionOfResources.PackUrlResource();
+            App.Current.MainWindow = main;
+            //this.Close();
+            main.Show();
+        }
     }
 }
