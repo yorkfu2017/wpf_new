@@ -21,6 +21,7 @@ namespace WpfApp1.ViewWindows.IntorductionOfResources
     {
         public PackUrlResource()
         {
+            
             InitializeComponent();
             Uri imgUri = new Uri(@"test1.jpg",UriKind.Relative);
             this.ImageBg2.Source = new BitmapImage(imgUri);
